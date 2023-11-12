@@ -1,0 +1,19 @@
+#### SERVER VARS
+NODE_ENV=development
+API_PORT=3000
+API_TOKEN=2979d3005c936a06058efb9afdc8f330
+BASE_URL=https://api.openweathermap.org/data/2.5
+
+#### DATABASE VARS
+MYSQL_HOST=localhost
+MYSQL_PORT=3306:3306
+MYSQL_IMAGE=mysql:8.1
+MYSQL_DB_NAME=api_previsao_tempo
+MYSQL_USER=root
+MYSQL_PASSWORD=123456789
+MYSQL_DIALECT=mysql
+#### SECRECT VARS
+JWT_SECRET=suaSenhaSecreta
+
+#### TIMEZONE VARS
+TZ='local'

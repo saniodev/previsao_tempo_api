@@ -10,9 +10,9 @@ const postLogin = async (req, res) => {
 
         if (!user) return res.status(400).json({ message: 'Invalid fields' });
 
-        const token = createJwt({ id: user.user_id, email: user.email });
+        const token = createJwt({ id: user.user_Id, email: user.email });
 
-        return res.status(200).json({ usuario: user.name, email: user.email, token: token });
+        return res.status(200).json({ id: user.user_Id, usuario: user.name, email: user.email, token: token, success: true });
 
     } catch (error) {
 
